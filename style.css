@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-size: 1em;
 }
 header {
   display: flex;
@@ -34,7 +35,7 @@ button {
   width: 100px;
 }
 #container {
-  width: 95%;
+  width: 75%;
   margin: 10px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -51,5 +52,8 @@ aside {
   grid-area: aside;
 }
 aside > div > img {
-  width: 80%;
+  width: 100%;
+}
+h1 {
+  font-size: 5em;
 }

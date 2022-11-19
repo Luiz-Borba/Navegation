@@ -4,10 +4,44 @@ body {
 }
 header {
   display: flex;
+  width: 95%;
+  margin: 10px auto;
+  justify-content: space-between;
+  align-items: center;
 }
-nav > ul  {
+nav > ul {
   display: flex;
 }
-ul>li{list-style: none;
-margin: 20px;}
-header>div{display: flex;}
+ul > li {
+  list-style: none;
+  margin: 20px;
+}
+header > div {
+  display: flex;
+  align-items: center;
+}
+#area-buttom{
+  margin-right: 30px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  background-color: white;
+  width: 100px;
+}
+#container {
+  width: 95%;
+  margin: 10px auto;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "main aside"; 
+}
+main { grid-area: main; }
+aside { grid-area: aside; }

@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  display: flex;
+}
+nav > ul  {
+  display: flex;
+}
+ul>li{list-style: none;
+margin: 20px;}
+header>div{display: flex;}

@@ -44,14 +44,15 @@ button {
 #login {
   border: none;
 }
+#menu-mobile {
+  visibility: hidden;
+}
 #container {
-  width: 75%;
+  width: 80%;
+  height: 800px;
   margin: 10px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "main aside";
+  display: flex;
+  justify-content: space-between;
 }
 #login:hover {
   border: black;
@@ -73,17 +74,6 @@ button:hover {
 strong:hover {
   color: black;
 }
-main {
-  grid-area: main;
-}
-aside {
-  grid-area: aside;
-}
-aside > div > img {
-  width: 80%;
-  min-width: 400px;
-  min-height: 700px;
-}
 
 strong {
   color: #a6a6a6;
@@ -99,43 +89,76 @@ p {
 #learn {
   background-color: black;
   color: aliceblue;
-  height: 40px;
-  width: 140px;
-  margin-top: 20px;
+  height: 60px;
+  width: 180px;
+  margin-top: 80px;
   border: none;
 }
 main > div > img {
-  width: auto;
+  width: 100%;
 }
 #sub-content-main {
   display: flex;
   justify-content: space-around;
-  margin-top: 130px;
+  margin-top: 90px;
+}
+#desktop {
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 45%;
+}
+.sub-conteduos {
+  width: 100px;
+  margin-top: 150px;
+  height: 25px;
+}
+aside {
+  width: 45%;
 }
 @media (max-width: 800px) {
+  #menu-mobile {
+    visibility: visible;
+  }
   #container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
+      "header"
       "aside"
       "main";
   }
   aside {
     grid-area: aside;
     width: 100%;
+    height: 300px;
+  }
+  header {
+    grid-area: header;
   }
   main {
     grid-area: main;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 100%;
     margin-top: -20px;
     margin: auto;
     text-align: center;
+  }
+  #area-buttom {
+    display: none;
+  }
+  #sub-content-main {
+    margin: 60px;
+    width: 100%;
+  }
+  .sub-conteduos {
+    margin-top: 0px;
   }
   #desktop {
     display: none;
@@ -143,7 +166,7 @@ main > div > img {
   #mobile {
     visibility: inherit;
     width: 100%;
-    height: 150px;
+    height: 100%;
   }
 
   header > div > nav {
@@ -156,5 +179,9 @@ main > div > img {
   p {
     width: 95%;
     margin: 10px auto;
+    font-size: 1em;
+  }
+  .sub-conteduos {
+    width: 20%;
   }
 }

@@ -36,6 +36,7 @@ ul > li {
 }
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 strong:hover {
   color: black;
@@ -74,16 +75,14 @@ header > div {
   visibility: hidden;
 }
 #card {
-  border: red solid 1px;
   z-index: 99;
   width: 50%;
-  margin: 20px auto;
-  margin-left: 10%;
-  height: 50%;
+  height: 70%;
   background-color: white;
   visibility: hidden;
   border-radius: 20px;
   position: absolute;
+  margin: 10% 20%;
 }
 #login {
   border: none;

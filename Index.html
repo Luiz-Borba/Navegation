@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
     <title>Front end Mentor</title>
   </head>
   <body>
@@ -13,16 +14,16 @@
         <i><img src="./images/logo.svg" alt="" /></i>
         <nav>
           <ul>
-            <li>Features</li>
-            <li>Company</li>
-            <li>Careers</li>
-            <li>About</li>
+            <li><a href="#"></a> Features</li>
+            <li><a href="#"></a> Company</li>
+            <li><a href="#"></a> Careers</li>
+            <li><a href="#"></a> About</li>
           </ul>
         </nav>
       </div>
       <div><img src="./images/icon-menu.svg" alt="" id="menu-mobile" /></div>
       <div id="area-buttom">
-        <button id="login">Login</button><button>Register</button>
+        <button id="login" onclick="login()"><a href="#">Login</a></button><button>Register</button>
       </div>
       
     </header>
@@ -49,6 +50,10 @@
           <img src="./images/client-maker.svg" alt="" class="sub-conteduos" />
         </div>
       </main>
+      <div id="card">
+        <h4>login<input type="mail" placeholder="digite seu email"><a href="#" onclick="fecharLogin()">x</a></h4>
+        <h4>Senha <input type="password"></h4>
+      </div>
       <aside>
         <img id="desktop" src="./images/image-hero-desktop.png" alt="" />
         <img id="mobile" src="./images/image-hero-mobile.png" alt="" />

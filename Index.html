@@ -11,14 +11,26 @@
   <body>
     <div id="card">
       <h4>
-        login<input type="mail" placeholder="digite seu email" /><a
-          href="#"
-          onclick="fecharLogin()"
-          >x</a
-        >
+        login<input type="mail" placeholder="digite seu email" /><a href="#"onclick="fecharLogin()">x</a>
       </h4>
       <h4>Senha <input type="password" placeholder="Digite sua senha" /></h4>
     </div>
+    <div id="btnMobile">
+      <div id="btnContent">
+      <ul>
+        <a href="#" onclick="btnClose()"><img src="./images/icon-close-menu.svg" alt="" ></a>
+        <li><a href="#">Features <img src="./images/icon-arrow-down.svg" alt=""></a></li>
+        <li><a href="#">Company <img src="./images/icon-arrow-down.svg" alt=""></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <button id="login" onclick="login()"><a href="#">Login</a></button
+        ><button>Register</button>
+      </div>
+    </div>
+
+
+
     <div id="todo">
       <header>
         <div>
@@ -32,7 +44,7 @@
             </ul>
           </nav>
         </div>
-        <div><img src="./images/icon-menu.svg" alt="" id="menu-mobile" /></div>
+        <div><a href="#" onclick="btnAbrir()"> <img src="./images/icon-menu.svg" alt="" id="menu-mobile" /></a></div>
         <div id="area-buttom">
           <button id="login" onclick="login()"><a href="#">Login</a></button
           ><button>Register</button>

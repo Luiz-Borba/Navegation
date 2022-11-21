@@ -4,6 +4,10 @@ body {
   font-size: 1em;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+#btnMobile{
+  visibility: hidden;
+  position: absolute;
+}
 button {
   border: none;
   border-radius: 10px;
@@ -140,6 +144,8 @@ header > div {
 @media (max-width: 800px) {
   header {
     grid-area: header;
+    padding-top: 10px;
+    margin-top: 0px;
   }
   #btnMobile {
     width: 60%;
@@ -149,12 +155,14 @@ header > div {
     position: absolute;
     float: right;
     visibility: hidden;
+    justify-content: flex-start;
   }
   #btnContent {
     margin-left: 10%;
     display: flex;
     flex-direction: column;
     transition: all 0.5s;
+    align-items: center;
   }
   aside {
     grid-area: aside;
@@ -182,10 +190,6 @@ header > div {
     width: 95%;
     margin: 10px auto;
     font-size: 1em;
-  }
-  header {
-    padding-top: 10px;
-    margin-top: 0px;
   }
   #menu-mobile {
     visibility: visible;

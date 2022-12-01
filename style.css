@@ -1,242 +1,53 @@
 body {
   margin: 0px;
   padding: 0px;
+  list-style: none;
   font-size: 1em;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#btnMobile{
-  visibility: hidden;
-  position: absolute;
-}
-button {
-  border: none;
-  border-radius: 10px;
-  height: 30px;
-  background-color: white;
-  width: 100px;
-  color: #a6a6a6;
-  border: #a6a6a6 solid 2px;
-}
-button:hover {
-  border: black solid 2px;
+a{
+  text-decoration: none;
   color: black;
-  cursor: pointer;
-  font-weight: bold;
 }
 header {
   display: flex;
-  width: 95%;
-  margin: 10px auto;
+  width: 90%;
+  margin: 0px auto;
+  height: 150px;
+  border: red solid 1px;
   justify-content: space-between;
+}
+#contentLeft {
+  display: flex;
+  width: 40%;
   align-items: center;
 }
-nav > ul {
+ul {
   display: flex;
-}
-ul > li {
   list-style: none;
-  margin: 20px;
-  color: #a6a6a6;
+  gap: 20px;
 }
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #a6a6a6;
-}
-strong:hover {
-  color: black;
-}
-main > div > img {
-  width: 100%;
-}
-strong {
-  color: #a6a6a6;
-}
-h1 {
-  font-size: 5em;
-  margin-top: 60px;
-}
-p {
-  font-size: 1.2em;
-  color: #a6a6a6;
-}
-main {
-  width: 45%;
-}
-aside {
-  width: 45%;
-}
-header > div {
+#contentRigth{
+  width: 20%;
   display: flex;
+  justify-content: space-between;
+  border: red solid 1px;
   align-items: center;
 }
-#area-buttom {
-  margin-right: 30px;
-  width: 150px;
+#subMenu{
+  visibility: hidden;
+  z-index: -99;
   display: flex;
-  justify-content: space-between;
-}
-#mobile {
-  visibility: hidden;
-}
-#card {
-  z-index: 99;
-  width: 50%;
-  height: 70%;
-  background-color: white;
-  visibility: hidden;
-  border-radius: 20px;
   position: absolute;
-  margin: 10% 30%;
-  box-shadow: 0px -1px 17px 7px rgba(0, 0, 0, 0.75);
-}
-#Register{
-  z-index: 99;
-  width: 50%;
-  height: 70%;
+  margin-left: -50px;
+  flex-direction: column;
+  margin-top: 10px;
+  border:red solid 1px;
+  padding: 20px;
   background-color: white;
-  visibility: hidden;
-  border-radius: 20px;
-  position: absolute;
-  margin: 10% 30%;
-  box-shadow: 0px -1px 17px 7px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  gap: 20px;
 }
-#login {
-  border: none;
-}
-#menu-mobile {
-  visibility: hidden;
-}
-#container {
-  width: 80%;
-  height: 800px;
-  margin: 10px auto;
-  display: flex;
-  justify-content: space-between;
-}
-#login:hover {
-  border: black;
-  color: black;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#learn:hover {
-  border: black solid 1px;
-  background-color: white;
-  color: black;
-}
-
-#learn {
-  background-color: black;
-  color: aliceblue;
-  height: 60px;
-  width: 180px;
-  margin-top: 80px;
-  border: none;
-}
-
-#sub-content-main {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 90px;
-}
-#desktop {
-  width: 100%;
-  height: 100%;
-}
-
-.sub-conteduos {
-  width: 100px;
-  margin-top: 150px;
-  height: 25px;
-}
-
-@media (max-width: 800px) {
-  header {
-    grid-area: header;
-    padding-top: 10px;
-    margin-top: 0px;
-  }
-  #btnMobile {
-    width: 60%;
-    background-color: white;
-    height: 0%;
-    margin-left: 40%;
-    position: absolute;
-    float: right;
-    visibility: hidden;
-    justify-content: flex-start;
-  }
-  #btnContent {
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s;
-    align-items: center;
-  }
-  aside {
-    grid-area: aside;
-    width: 100%;
-    height: 300px;
-  }
-  main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: -20px;
-    margin: auto;
-    text-align: center;
-  }
-  header > div > nav {
-    display: none;
-  }
-  br {
-    display: none;
-  }
-  h1,
-  p {
-    width: 95%;
-    margin: 10px auto;
-    font-size: 1em;
-  }
-  #menu-mobile {
-    visibility: visible;
-  }
-  #container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "header"
-      "aside"
-      "main";
-  }
-
-  #area-buttom {
-    display: none;
-  }
-  #sub-content-main {
-    margin: 60px;
-    width: 100%;
-  }
-
-  #desktop {
-    display: none;
-  }
-  #mobile {
-    visibility: inherit;
-    width: 100%;
-    height: 100%;
-  }
-  .sub-conteduos {
-    width: 20%;
-  }
-  .sub-conteduos {
-    margin-top: 0px;
-  }
+#subMenu:hover{
+  background-color: red;
 }

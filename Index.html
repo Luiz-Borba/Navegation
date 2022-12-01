@@ -4,90 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="./index.js"></script>
-    <title>Front end Mentor</title>
+    <title>Document</title>
   </head>
   <body>
-    <div id="card">
-      <h4>
-        login<input type="mail" placeholder="digite seu email" /><a href="#"onclick="fecharLogin()">x</a>
-      </h4>
-      <h4>Senha <input type="password" placeholder="Digite sua senha" /></h4>
-    </div>
-    <div id="Register">
-      <h4>
-        Nome<input type="text" placeholder="digite seu nome" /><a href="#"onclick="btnFecharRegister()">x</a>
-      </h4>
-      <h4>Email <input type="email" placeholder="Digite seu Email" /></h4>
-      <h4>Senha <input type="password" placeholder="Digite sua senha"></h4>
-      <h4>Senha <input type="password" placeholder="Digite sua senha novamente"></h4>
-    </div>
-    <div id="btnMobile">
-      <div id="btnContent">
-      <ul>
-        <a href="#" onclick="btnClose()" ><img src="./images/icon-close-menu.svg" alt="" style="margin-left:80% ;" ></a>
-        <li><a href="#">Features <img src="./images/icon-arrow-down.svg" alt=""></a></li>
-        <li><a href="#">Company <img src="./images/icon-arrow-down.svg" alt=""></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <button id="login" onclick="login()"><a href="#">Login</a></button
-        ><button>Register</button>
-      </div>
-    </div>
-
-    <div id="todo">
-      <header>
-        <div>
-          <i><img src="./images/logo.svg" alt="" /></i>
-          <nav>
-            <ul>
-              <li><a href="#">Features <img src="./images/icon-arrow-down.svg" alt=""></a></li>
-              <li><a href="#">Company <img src="./images/icon-arrow-down.svg" alt=""></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">About</a></li>
+    <header>
+      <div id="contentLeft">
+        <img src="./images/logo.svg" alt="" height="40px" width="100px" />
+        <ul>
+          <li>
+            <a href="#" onmousemove ="abrirSubmenu()" onmouseout="fecharMenu()"
+              >Feature <img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+            <ul id="subMenu" >
+              <li><a href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a></li>
+              <li><a href="#"><img src="./images/icon-calendar.svg" alt="">Calendar</a></li>
+              <li><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
+              <li><a href="#"><img src="./images/icon-planning.svg" alt="">Plannings</a></li>
             </ul>
-          </nav>
-        </div>
-        <div><a href="#" onclick="btnAbrir()"> <img src="./images/icon-menu.svg" alt="" id="menu-mobile" /></a></div>
-        <div id="area-buttom">
-          <button id="login" onclick="login()"><a href="#">Login</a></button><button><a href="#" onclick="btnRegister()">Register</a></button>
-        </div>
-      </header>
-
-      <div id="container">
-        <main>
-          <h1>
-            Make <br />
-            remote work
-          </h1>
-          <p>
-            Get ypur team in sync, no matter your location. <br />
-            Streamline processes, create team rituals, and <br />
-            watch productivity solar
-          </p>
-          <button id="learn">Learn more</button>
-          <div id="sub-content-main">
-            <img
-              src="./images/client-databiz.svg"
-              alt=""
-              class="sub-conteduos"
-            />
-            <img
-              src="./images/client-audiophile.svg"
-              alt=""
-              class="sub-conteduos"
-            />
-            <img src="./images/client-meet.svg" alt="" class="sub-conteduos" />
-            <img src="./images/client-maker.svg" alt="" class="sub-conteduos" />
-          </div>
-        </main>
-        <aside>
-          <img id="desktop" src="./images/image-hero-desktop.png" alt="" />
-          <img id="mobile" src="./images/image-hero-mobile.png" alt="" />
-        </aside>
+          </li>
+          <li>
+            <a href="Feature"
+              >Company <img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="Feature"
+              >Carees <img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="Feature"
+              >About <img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+          </li>
+        </ul>
       </div>
+      <div id="contentRigth">
+        <button>Login</button>
+         <button>Registrar</button>
+        </div>
+    </header>
+    <div>
+      <main></main>
+      <aside></aside>
     </div>
   </body>
 </html>

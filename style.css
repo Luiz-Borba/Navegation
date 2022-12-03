@@ -3,9 +3,9 @@ body {
   padding: 0px;
   list-style: none;
   font-size: 1em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -27,27 +27,56 @@ ul {
   list-style: none;
   gap: 20px;
 }
-#contentRigth{
+#contentRigth {
   width: 20%;
   display: flex;
   justify-content: space-between;
   border: red solid 1px;
   align-items: center;
 }
-#subMenu{
-  visibility: hidden;
-  z-index: -99;
-  display: flex;
-  position: absolute;
-  margin-left: -50px;
-  flex-direction: column;
-  margin-top: 10px;
-  border:red solid 1px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  gap: 20px;
+
+.dropDowMenu ul {
+  list-style: none;
+  padding: 0px;
 }
-#subMenu:hover{
-  background-color: red;
+.dropDowMenu ul li {
+  display: inline;
+  position: relative;
+}
+.dropDowMenu ul li a {
+  text-decoration: none;
+  padding: 10px;
+  
+  
+  display: inline-block;
+}
+.dropDowMenu ul li a:hover {
+  left: 0;
+  
+  
+}
+.dropDowMenu ul ul {
+  display: none;
+  position: absolute;
+
+  left: 0;
+}
+.dropDowMenu ul li:hover ul {
+  display: block;
+  background-color: wheat;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.5s;
+  
+}
+.dropDowMenu ul ul li a {
+  display: flex;
+  gap: 10px;
+}
+nav> ul> li> ul> li> a {
+  display: flex;
+}
+.dropDowMenu ul li:hover a .down{
+  transform: rotate(180deg);
+  transition: all 0.5s;
 }

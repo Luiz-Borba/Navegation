@@ -5,13 +5,16 @@ body {
   font-size: 1em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-a {
+nav a {
   text-decoration: none;
+  color: rgb(112, 112, 112);
+}
+nav a:hover {
   color: black;
 }
 header {
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: 0px auto;
   height: 150px;
   border: red solid 1px;
@@ -46,14 +49,12 @@ ul {
 .dropDowMenu ul li a {
   text-decoration: none;
   padding: 10px;
-  
-  
+  min-width: 80px;
+
   display: inline-block;
 }
 .dropDowMenu ul li a:hover {
   left: 0;
-  
-  
 }
 .dropDowMenu ul ul {
   display: none;
@@ -67,16 +68,53 @@ ul {
   border-radius: 10px;
   padding: 10px;
   transition: all 0.5s;
-  
 }
 .dropDowMenu ul ul li a {
   display: flex;
   gap: 10px;
 }
-nav> ul> li> ul> li> a {
+nav > ul > li > ul > li > a {
   display: flex;
 }
-.dropDowMenu ul li:hover a .down{
+.dropDowMenu ul li:hover a .down {
   transform: rotate(180deg);
   transition: all 0.5s;
+}
+.dropDowMenu ul li .down {
+  transition: all 0.5s;
+}
+button {
+  cursor: pointer;
+  border-radius: 15px;
+  width: 45%;
+  height: 50px;
+  color: rgb(112, 112, 112);
+  border: solid 2px rgb(112, 112, 112);
+  background-color: white;
+  font-weight: 700;
+}
+#login {
+  border: none;
+}
+button:hover {
+  color: black;
+  border: black solid 2px;
+}
+#container {
+  display: flex;
+  width: 80%;
+  border: red solid 1px;
+  margin:10px auto;
+}
+main{
+  border: blue solid 1px;
+  width: 40%;
+}
+.patrocionio{
+  width: 100%;
+}
+#subConteudo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

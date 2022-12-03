@@ -4,6 +4,7 @@ body {
   list-style: none;
   font-size: 1em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
 }
 nav a {
   text-decoration: none;
@@ -103,11 +104,12 @@ button:hover {
 #container {
   display: flex;
   width: 80%;
-  border: red solid 1px;
+
   margin:10px auto;
+  justify-content: space-between;
 }
 main{
-  border: blue solid 1px;
+
   width: 40%;
 }
 .patrocionio{
@@ -118,3 +120,7 @@ main{
   display: flex;
   justify-content: space-between;
 }
+aside{
+  width: 40%;
+}
+aside>img{width: 100%;}

@@ -51,7 +51,6 @@ ul {
   text-decoration: none;
   padding: 10px;
   min-width: 80px;
-
   display: inline-block;
 }
 .dropDowMenu ul li a:hover {
@@ -65,10 +64,11 @@ ul {
 }
 .dropDowMenu ul li:hover ul {
   display: block;
-  background-color: wheat;
+  background-color: white;
+  box-shadow: 0px 0px 82px -7px rgba(0,0,0,0.75);
   border-radius: 10px;
   padding: 10px;
-  transition: all 0.5s;
+  
 }
 .dropDowMenu ul ul li a {
   display: flex;
@@ -81,7 +81,8 @@ nav > ul > li > ul > li > a {
   transform: rotate(180deg);
   transition: all 0.5s;
 }
-.dropDowMenu ul li .down {
+
+.down {
   transition: all 0.5s;
 }
 button {
@@ -104,23 +105,48 @@ button:hover {
 #container {
   display: flex;
   width: 80%;
-
-  margin:10px auto;
+  min-width: 850px;
+  margin: 10px auto;
   justify-content: space-between;
 }
-main{
-
+main {
   width: 40%;
+  column-gap: 100px;
 }
-.patrocionio{
+.patrocionio {
   width: 100%;
 }
-#subConteudo{
+#subConteudo {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 15%;
 }
-aside{
+aside {
   width: 40%;
 }
-aside>img{width: 100%;}
+aside > img {
+  width: 100%;
+}
+h2 {
+  font-size: 3em;
+}
+p {
+  font-size: 1.5em;
+  margin-top: 15%;
+  color: rgb(181, 173, 173);
+}
+#Learn {
+  width: 150px;
+  margin-top: 15%;
+  color: white;
+  background-color: black;
+  transition: all 0.5s;
+  border: none;
+}
+#Learn:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.5s;
+  border: black solid 2px;
+}

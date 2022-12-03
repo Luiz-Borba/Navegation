@@ -234,6 +234,10 @@ p {
     color: rgb(65, 64, 64);
     text-decoration: none;
   }
+  #close{
+    margin-top: 10px;
+    margin-left: 80%;
+  }
   #menuButton {
     width: 90%;
     display: flex;
@@ -246,5 +250,17 @@ p {
   }
   #btn-mobile-login {
     border: none;
+  }
+  #menuMobile ul li ul{
+    width: 70%;
+    height: 1px;
+    z-index: -99;
+    
+  }
+  #menuMobile ul li ul li{
+    visibility: hidden;
+  }
+  #menuMobile ul li ul li a img{
+    margin-right: 10px;
   }
 }

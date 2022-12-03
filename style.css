@@ -18,7 +18,6 @@ header {
   width: 95%;
   margin: 0px auto;
   height: 150px;
-  border: red solid 1px;
   justify-content: space-between;
 }
 #contentLeft {
@@ -34,10 +33,9 @@ ul {
 #contentRigth {
   width: 20%;
   display: flex;
-  justify-content: space-between;
-  border: red solid 1px;
   align-items: center;
 }
+#menu{visibility: hidden;}
 
 .dropDowMenu ul {
   list-style: none;
@@ -65,10 +63,9 @@ ul {
 .dropDowMenu ul li:hover ul {
   display: block;
   background-color: white;
-  box-shadow: 0px 0px 82px -7px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 82px -7px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   padding: 10px;
-  
 }
 .dropDowMenu ul ul li a {
   display: flex;
@@ -88,7 +85,7 @@ nav > ul > li > ul > li > a {
 button {
   cursor: pointer;
   border-radius: 15px;
-  width: 45%;
+  width: 100px;
   height: 50px;
   color: rgb(112, 112, 112);
   border: solid 2px rgb(112, 112, 112);
@@ -149,4 +146,67 @@ p {
   background-color: white;
   transition: all 0.5s;
   border: black solid 2px;
+}
+#img-mobile {
+  visibility: hidden;
+  z-index: -99;
+  float: right;
+}
+@media (max-width: 950px) {
+  nav {
+    display: none;
+  }
+  #acesso {
+    display: none;
+    visibility: visible;
+  }
+  #container {
+    flex-direction: column;
+    width: 100%;
+    flex-direction: column-reverse;
+    min-width: 0px;
+  }
+  header {
+    width: 100%;
+  }
+  aside > img {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main > h2 > br {
+    display: none;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  aside {
+    width: 100%;
+    min-width: none;
+  }
+  p {
+    text-align: center;
+  }
+  #img-aside {
+    display: none;
+  }
+  #img-mobile {
+    visibility: visible;
+    position: relative;
+  }
+  .patrocionio {
+    width: 70%;
+  }
+  #subConteudo {
+    width: 100%;
+  }
+  #contentRigth{
+    justify-content: center;
+  }
+  #menu{visibility: visible;}
 }

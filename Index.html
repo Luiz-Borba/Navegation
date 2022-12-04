@@ -11,10 +11,11 @@
   <body>
     <div id="contentMenu">
       <div id="menuMobile">
-        <div id="menu-mobile">
-          <img src="./images/icon-close-menu.svg" alt="" id="close">
+        <div>
+          
+          <a href="#" onclick="todo.fecharMenu()"><img src="./images/icon-close-menu.svg" alt="" id="close" ></a>
           <ul>
-            <li><a href="#" id="features" onclick="todo.features()">Features <img src="./images/icon-arrow-down.svg" alt="" id="up">
+            <li><a href="#" id="features" onclick="todo.features()">Features <img src="./images/icon-arrow-down.svg" alt="" onclick="fecharFeatures()" id="up">
               <ul id="todo-list">
                 <li id="item1"><a href="#"> <img src="./images/icon-todo.svg" alt=""> Todo List</a></li>
                 <li id="item2"><a href="#"> <img src="./images/icon-calendar.svg" alt=""> Calendar</a></li>
@@ -84,7 +85,7 @@
         </nav>
       </div>
       <div id="contentRigth">
-        <a href="#"><img src="./images/icon-menu.svg" alt="" id="menu" /></a>
+        <a href="#" onclick="todo.abrirMenu()"><img src="./images/icon-menu.svg" alt="" id="menu"  /></a>
         <div id="acesso">
           <button id="login">Login</button>
           <button>Registrar</button>

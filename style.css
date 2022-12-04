@@ -154,7 +154,7 @@ p {
   z-index: -99;
   float: right;
 }
-#menu-mobile{
+#menuMobile{
   visibility: hidden;
   position: absolute;
   z-index: -99;
@@ -162,11 +162,6 @@ p {
 @media (max-width: 950px) {
   nav {
     display: none;
-  }
-  #menu-mobile{
-    visibility: visible;
-    position: relative;
-    z-index: 99;
   }
   #acesso {
     display: none;
@@ -226,11 +221,14 @@ p {
   #menuMobile {
     border: red solid 1px;
     width: 60%;
-    height: 850px;
+    height: 1px;
     position: absolute;
     background-color: white;
     margin-left: 40%;
     z-index: 99;
+    visibility: hidden;
+    position: absolute;
+    z-index: -99;
   }
   #menuMobile ul {
     display: flex;

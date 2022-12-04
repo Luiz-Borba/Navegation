@@ -154,9 +154,19 @@ p {
   z-index: -99;
   float: right;
 }
+#menu-mobile{
+  visibility: hidden;
+  position: absolute;
+  z-index: -99;
+}
 @media (max-width: 950px) {
   nav {
     display: none;
+  }
+  #menu-mobile{
+    visibility: visible;
+    position: relative;
+    z-index: 99;
   }
   #acesso {
     display: none;
